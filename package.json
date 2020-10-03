@@ -2,5 +2,33 @@
   "name": "kvjson",
   "version": "0.1.0",
   "description": "Set key=val in .json files",
-  "license": "SEE LICENSE IN ./LICENSE"
+  "license": "SEE LICENSE IN ./LICENSE",
+  "keywords": [
+    "npm",
+    "check",
+    "find",
+    "json",
+    "updates",
+    "upgrades",
+    "dependencies",
+    "package.json",
+    "updater",
+    "version",
+    "management"
+  ],
+  "engines": {
+    "node": ">=10.17"
+  },
+  "main": "./kvjson.js",
+  "bin": {
+    "kvjson": "./cmd/kvjson.js"
+  },
+  "repository": "github:mkungla/kvjson",
+  "homepage": "https://github.com/mkungla/kvjson",
+  "bugs": {
+    "url": "https://github.com/mkungla/kvjson/issues"
+  },
+  "files": [
+    "bin"
+  ]
 }
