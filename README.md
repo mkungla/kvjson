@@ -1,4 +1,4 @@
-# kvjson
+# kvjson [![npm version](https://badge.fury.io/js/kvjson.svg)](https://badge.fury.io/js/kvjson)
 
 Set key=val in .json files
 
