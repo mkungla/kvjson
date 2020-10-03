@@ -1,0 +1,6 @@
+{
+  "name": "kvjson",
+  "version": "0.1.0",
+  "description": "Set key=val in .json files",
+  "license": "SEE LICENSE IN ./LICENSE"
+}

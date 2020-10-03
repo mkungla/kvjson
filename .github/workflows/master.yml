@@ -1,0 +1,16 @@
+name: master
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - '*.*'
+    tags-ignore:
+      - '*.*'
+
+jobs:
+  dummy:
+    steps:
+      - uses: actions/checkout@v2
+      - run: echo workflow for kvjson not implemented && exit 1
