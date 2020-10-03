@@ -21,14 +21,21 @@
   },
   "main": "./kvjson.js",
   "bin": {
-    "kvjson": "./cmd/kvjson.js"
+    "kvjson": "cmd/kvjson.js"
   },
-  "repository": "github:mkungla/kvjson",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkungla/kvjson.git"
+  },
   "homepage": "https://github.com/mkungla/kvjson",
   "bugs": {
     "url": "https://github.com/mkungla/kvjson/issues"
   },
   "files": [
     "bin"
-  ]
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marko Kungla <marko.kungla@gmail.com>"
 }
