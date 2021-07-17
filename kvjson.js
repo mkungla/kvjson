@@ -6,7 +6,7 @@ const pkg = require('./package.json')
 
 // check if a new version of kvjson is available and print an update notification
 const notifier = updateNotifier({ pkg })
-notifier.notify();
+notifier.notify()
 
 const opts = [
   {
