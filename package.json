@@ -1,6 +1,6 @@
 {
   "name": "kvjson",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Set key=val in .json files",
   "license": "MIT",
   "keywords": [
