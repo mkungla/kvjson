@@ -1,16 +1,24 @@
 name: master
 
-on:
-  push:
-    branches:
-      - master
-    paths:
-      - '*.*'
-    tags-ignore:
-      - '*.*'
+on: [push]
 
 jobs:
-  dummy:
+  test:
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - run: echo workflow for kvjson not implemented && exit 1
+      - uses: actions/checkout@v2.3.4
+      - name: Use Node.js
+        uses: actions/setup-node@v2.2.0
+        with:
+          node-version: 14.x
+      - name: Cache Node dependencies
+        uses: actions/cache@v2.1.6
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: Install dependencies
+        run: npm install
+      - name: Run standard
+        run: npm run standard

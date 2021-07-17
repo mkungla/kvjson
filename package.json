@@ -16,12 +16,15 @@
     "version",
     "management"
   ],
+  "devDependencies": {
+    "standard": "*"
+  },
   "engines": {
     "node": ">=10.17"
   },
   "main": "./kvjson.js",
   "bin": {
-    "kvjson": "cmd/kvjson.js"
+    "kvjson": "kvjson.js"
   },
   "repository": {
     "type": "git",
@@ -31,11 +34,12 @@
   "bugs": {
     "url": "https://github.com/mkungla/kvjson/issues"
   },
-  "files": [
-    "bin"
-  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "standard": "standard"
   },
-  "author": "Marko Kungla <marko.kungla@gmail.com>"
+  "author": "Marko Kungla <marko.kungla@gmail.com>",
+  "dependencies": {
+    "commander": "^8.0.0",
+    "update-notifier": "^5.1.0"
+  }
 }
