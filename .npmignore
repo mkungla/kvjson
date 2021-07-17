@@ -1,4 +1,5 @@
 .github/
+tmp/
 .editorconfig
 .gitattributes
 .gitignore
