@@ -2,7 +2,7 @@
   "name": "kvjson",
   "version": "1.0.0",
   "description": "Set key=val in .json files",
-  "license": "SEE LICENSE IN ./LICENSE",
+  "license": "MIT",
   "keywords": [
     "npm",
     "check",
